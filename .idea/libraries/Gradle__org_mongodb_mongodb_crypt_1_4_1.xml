@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mongodb:mongodb-crypt:1.4.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-crypt/1.4.1/e98fa01837224e8333606c779dc14cfd02d715bf/mongodb-crypt-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-crypt/1.4.1/3a5990adaac6e0a8122b958ff424d2ba30455033/mongodb-crypt-1.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-crypt/1.4.1/bcca4f020619059f3ea63fe3656802ec50447f17/mongodb-crypt-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
