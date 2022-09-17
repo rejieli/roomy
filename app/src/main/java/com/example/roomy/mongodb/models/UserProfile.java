@@ -8,13 +8,15 @@ public class UserProfile {
     private ObjectId _id;
     private String fullName;
     private String username;
+    private String password;
     private String email;
     private String pNumber;
 
-    public UserProfile(ObjectId id, String fullName, String username, String email, String pNumber) {
+    public UserProfile(ObjectId id, String fullName, String username, String password, String email, String pNumber) {
         setId(id);
         setFullName(fullName);
         setUsername(username);
+        setPassword(password)
         setEmail(email);
         setPNumber(pNumber);
     }
@@ -46,6 +48,15 @@ public class UserProfile {
         return this;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public UserProfile setPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -71,6 +82,7 @@ public class UserProfile {
         sb.append("id=").append(_id);
         sb.append(", fullName=").append(fullName);
         sb.append(", username=").append(username);
+        //purposeful lack of password
         sb.append(", email=").append(email);
         sb.append(", pNumber=").append(pNumber);
         sb.append('}');

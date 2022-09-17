@@ -68,11 +68,12 @@ public class Create {
             MongoCollection<Document> profilesCollection,
             String fullName,
             String username,
+            String password,
             String email,
             String pNumber
     ) {
         ObjectId id = new ObjectId();
-        profilesCollection.insertOne(generateNewUserProfile(id, fullName, username, email, pNumber));
+        profilesCollection.insertOne(generateNewUserProfile(id, fullName, username, password, email, pNumber));
         System.out.println("One profile inserted for user " + fullName);
     }
 
@@ -100,6 +101,7 @@ public class Create {
     private static Document generateNewUserProfile(ObjectId id, String fullName, String username, String email, String pNumber) {
         return new Document("_id", id).append("full_name", fullName)
                 .append("username", username)
+                .append("password", password)
                 .append("email", email)
                 .append("pNumber", pNumber);
     }
