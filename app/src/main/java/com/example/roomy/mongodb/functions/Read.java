@@ -61,14 +61,10 @@ public class Read {
         }
     }
 
-    public static Document getByFieldNameAndValue(String db, String collection, String fieldName, Object value) {
-        try (MongoClient mongoClient = MongoClients.create(System.getProperty("mongodb.uri"))) {
-            MongoDatabase DB = mongoClient.getDatabase(db);
-            MongoCollection<Document> Collection = DB.getCollection(collection);
-
-            // find one document with specific fieldName and value
-            Document doc = Collection.find(eq(fieldName, value)).first();
-            return doc;
-        }
+    public static Document getByFieldNameAndValue(MongoCollection<Document> collection, String fieldName, Object value) {
+        // find one document with specific fieldName and value
+        // need to make sure that the type of value matches with the typing for field
+        Document doc = collection.find(eq(fieldName, value)).first();
+        return doc;
     }
 }
