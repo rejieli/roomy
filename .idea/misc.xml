@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/grey_circle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2863247863247863" />
+=======
+        <entry key="..\:/Users/fanya/Documents/Coding Work/Hackathons/roomy/app/src/main/res/layout/activity_main.xml" value="0.1" />
+>>>>>>> mongodb
       </map>
     </option>
   </component>
