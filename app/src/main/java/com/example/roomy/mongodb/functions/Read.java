@@ -4,6 +4,7 @@ import com.mongodb.client.*;
 import com.example.roomy.mongodb.models.UserProfile;
 
 import org.bson.Document;
+import org.bson.types.ObjectId;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +66,13 @@ public class Read {
         // find one document with specific fieldName and value
         // need to make sure that the type of value matches with the typing for field
         Document doc = collection.find(eq(fieldName, value)).first();
+        return doc;
+    }
+
+    public static Document getById(MongoCollection<Document> collection, ObjectId id) {
+        // find one document with specific fieldName and value
+        // need to make sure that the type of value matches with the typing for field
+        Document doc = collection.find(eq("_id", id)).first();
         return doc;
     }
 }
