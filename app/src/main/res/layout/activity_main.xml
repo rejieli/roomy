@@ -23,27 +23,78 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="40dp"
         android:src="@drawable/house_select" />
-
+<LinearLayout
+    android:id="@+id/loginTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/houseSelect"
+    android:orientation="horizontal"
+    android:weightSum="2">
     <TextView
         android:id="@+id/loginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/houseSelect"
         android:fontFamily="@font/opensans_regular"
         android:text="Login | "
+        android:layout_weight="1"
         android:textSize="30sp"
-        android:gravity="center"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/roomyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/houseSelect"
-        android:layout_toRightOf="@id/loginText"
+        android:layout_weight="1"
         android:fontFamily="@font/oleo_regular"
         android:paddingTop="2dp"
         android:text="Roomy"
         android:textSize="30sp"
         android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/loginTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <TextView
+        android:id="@+id/loginDescription"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_regular"
+        android:paddingTop="2dp"
+        android:text="Please enter the details below to continue."
+        android:textSize="12sp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/emailAddressInput"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="30sp"
+        android:hint="Email address"
+        android:fontFamily="@font/opensans_regular"
+        android:paddingTop="2dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="30sp"
+        android:hint="Password"
+        android:fontFamily="@font/opensans_regular"
+        android:paddingTop="2dp"
+        android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"/>
+    </LinearLayout>
 </RelativeLayout>
