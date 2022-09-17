@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/greyCircle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grey_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/houseSelect"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:src="@drawable/house_select" />
+    <LinearLayout
+        android:id="@+id/SignupTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/houseSelect"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/signupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Signup | "
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/roomyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/oleo_regular"
+            android:paddingTop="2dp"
+            android:text="Roomy"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/SignupTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/SignupDescription"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:text="Please enter the details below to continue."
+            android:textSize="12sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="First name"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="Last name"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/emailAddressInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="Email address"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="Password"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/passwordConfirmationInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="Password Confirmation"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="30sp"
+            android:hint="Phone Number (optional)"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="2dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/SignupButton"
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:hint="SIGNUP"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+</RelativeLayout>
